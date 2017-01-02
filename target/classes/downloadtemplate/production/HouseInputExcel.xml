@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<excel excelName="猪舍初始化">
+    <thead name="猪舍初始化">
+        <col index="A" width='12' type="1" key="houseName" value="猪舍名称"></col>
+        <col index="B" width='12' type="2" key="houseTypeName" value="猪舍类型" class="name"></col>
+        <col index="C" width='12' type="2" key="houseType" value="猪舍类型ID" class="id"></col>
+        <col index="D" width='12' type="0" key="area" value="面积" format="#.##" formatMax="1000000"></col>
+        <col index="E" width='12' type="0" key="depreciationPolicy" value="折旧期" format="#" formatMax="100"></col>
+        <col index="F" width='12' type="0" key="cost" value="造价" format="#.##"></col>
+        <col index="G" width='12' type="1" key="pigpenName" value="栏位名称"></col>
+        <col index="H" width='12' type="0" key="length" value="栏长" format="#" formatMax="1000"></col>
+        <col index="I" width='12' type="0" key="width" value="栏宽" format="#" formatMax="1000"></col>
+        <col index="J" width='12' type="0" key="pigNum" value="栏均饲养量" format="#" formatMax="1000000"></col>
+        <col index="K" width='12' type="1" key="notes" value="备注"></col>
+    </thead>
+</excel>

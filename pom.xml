@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.minos</groupId>
+    <artifactId>minos-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>minos-web</artifactId>
+  <packaging>war</packaging>
+  <name>minos-web</name>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <!-- 覆盖central的设置，允许下载snapshot的构件 
+ <repositories>  
+      <repository>  
+          <id>central</id>  
+          <name>Maven Central Repository</name>  
+          <url>http://192.168.1.242:8081/nexus/content/groups/public/</url>  
+          <snapshots>  
+              <enabled>true</enabled>  
+          </snapshots>  
+      </repository>  
+  </repositories>
+  -->
+    
+ <dependencies>
+	<dependency>
+		 <groupId>com.minos</groupId>
+	  	 <artifactId>minos-app</artifactId>
+	  	 <version>${project.version}</version>
+	  	 <!--<exclusions>-->
+			<!--<exclusion>-->
+				<!--<groupId>*</groupId>-->
+				<!--<artifactId>*</artifactId>-->
+			<!--</exclusion>-->
+		<!--</exclusions>-->
+	 </dependency>
+	 
+
+		
+  </dependencies>
+  
+  
+  
+  <build>
+	   <finalName>minos-web</finalName>
+		<!--<resources>
+		 	 <resource>
+				<directory>src/main/resources</directory>
+	            <includes>
+	                <include>**/*.properties</include>
+	                <include>**/*.xml</include>
+	            </includes>
+	            <filtering>false</filtering>
+            </resource>
+		</resources> -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<warName>project</warName>
+					<!--war存放路径 -->
+					<webappDirectory>${project.build.directory}/xn</webappDirectory>
+					<warSourceDirectory>WebContent</warSourceDirectory>
+					<!--监测xml配置 -->
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+			
+		</plugins>
+  </build>
+</project>

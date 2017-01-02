@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sidebar>
+	<folder moduleName="基本资料" moduleId="10" >
+		<menu parentModuleId="10"  levelNum="2"  moduleId="101"  moduleName="指标库建模" moduleUrl="jsp/backend/PpIndicator.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="112"  moduleName="指标库" moduleUrl="jsp/backend/PpIndicatorCust.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="102"  moduleName="品种库" moduleUrl="jsp/backend/CdBreed.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="103"  moduleName="角色管理" moduleUrl="jsp/basicinfo/RoleManageZ.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="104"  moduleName="组织架构" moduleUrl="jsp/basicinfo/OrganizationalStructure.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="105"  moduleName="人员管理" moduleUrl="jsp/basicinfo/UserManage.jsp"/>	
+		<menu parentModuleId="10"  levelNum="2"  moduleId="106"  moduleName="产线管理" moduleUrl="jsp/basicinfo/PpLine.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="107"  moduleName="猪舍管理" moduleUrl="jsp/basicinfo/PpHouse.jsp"/>	
+		<menu parentModuleId="10"  levelNum="2"  moduleId="108"  moduleName="业务编码" moduleUrl="jsp/backend/CdBcode.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="109"  moduleName="用户编码" moduleUrl="jsp/backend/CdBcodeCust.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="110"  moduleName="物料主数据" moduleUrl="jsp/basicinfo/CdMaterial.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="111"  moduleName="物料组维护" moduleUrl="jsp/basicinfo/CdMaterialGroup.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="112"  moduleName="供应商信息" moduleUrl="jsp/basicinfo/HrCompanyProvider.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="113"  moduleName="客户信息" moduleUrl="jsp/basicinfo/HrCompanyClientele.jsp"/>
+		<!-- <menu parentModuleId="10"  levelNum="2"  moduleId="112"  moduleName="种公猪" moduleUrl="jsp/basicinfo/CdBoar.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="113"  moduleName="种母猪" moduleUrl="jsp/basicinfo/CdSow.jsp"/>
+		<menu parentModuleId="10"  levelNum="2"  moduleId="114"  moduleName="肉猪" moduleUrl="jsp/basicinfo/CdPorkPig.jsp"/> -->
+	</folder>	
+
+	<folder moduleName="生产管理" moduleId="20" >
+		<menu parentModuleId="20" levelNum="2" moduleId="202" moduleName="事件查看" moduleUrl="jsp/production/BillView.jsp"/>
+		<menu parentModuleId="20" levelNum="2" moduleId="203" moduleName="猪群管理" moduleUrl="jsp/production/Swinery.jsp"/>
+		<menu parentModuleId="20" levelNum="2" moduleId="204" moduleName="猪只管理" moduleUrl="jsp/production/PpPig.jsp"/>
+		
+		<menu parentModuleId="20" levelNum="2" moduleId="221" moduleName="种猪事件" moduleUrl=""/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="201" moduleName="猪只入场" moduleUrl="jsp/production/PigMoveIn.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="205" moduleName="更换耳号" moduleUrl="jsp/production/ChangeEarBrand.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="206" moduleName="后备转生产公猪" moduleUrl="jsp/production/BoarReserveToProduct.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="208" moduleName="配种" moduleUrl="jsp/production/Breed.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="207" moduleName="采精" moduleUrl="jsp/production/Semen.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="209" moduleName="妊娠检查" moduleUrl="jsp/production/PregnancyCheck.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="210" moduleName="流产" moduleUrl="jsp/production/Misscarry.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="211" moduleName="转产房" moduleUrl="jsp/production/ChangeLaborHouse.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="212" moduleName="分娩" moduleUrl="jsp/production/Delivery.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="213" moduleName="断奶" moduleUrl="jsp/production/Wean.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="214" moduleName="种猪淘汰申请" moduleUrl="jsp/production/BreedPigObsolete.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="215" moduleName="种猪死亡" moduleUrl="jsp/production/BreedPigDie.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="216" moduleName="仔猪死亡" moduleUrl="jsp/production/ChildPigDie.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="217" moduleName="后备情期鉴定" moduleUrl="jsp/production/PrepubertalCheck.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="218" moduleName="寄养" moduleUrl="jsp/production/Foster.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="218" moduleName="种猪转舍" moduleUrl="jsp/production/BreedPigChangeHouse.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="219" moduleName="种猪淘汰审批" moduleUrl="/jsp/production/BoarObsoleteAudit.jsp"/>
+		<menu parentModuleId="221" levelNum="3"  moduleId="220" moduleName="奶妈转舍" moduleUrl="/jsp/production/NurseChangeHouse.jsp"/>
+		
+		
+		<menu parentModuleId="20" levelNum="2" moduleId="222" moduleName="肉猪事件" moduleUrl=""/>
+		<menu parentModuleId="222"  levelNum="3"  moduleId="220" moduleName="转保育" moduleUrl="jsp/production/ToChildCare.jsp"/>
+		<menu parentModuleId="222"  levelNum="3"  moduleId="221" moduleName="转育肥" moduleUrl="jsp/production/ToFatten.jsp"/>
+		<menu parentModuleId="222"  levelNum="3"  moduleId="222" moduleName="商品猪死亡" moduleUrl="jsp/production/GoodPigDie.jsp"/>
+		<menu parentModuleId="222"  levelNum="3"  moduleId="223" moduleName="猪只销售" moduleUrl="jsp/production/GoodPigSell.jsp"/>
+		<menu parentModuleId="222"  levelNum="3"  moduleId="224" moduleName="背膘测定" moduleUrl="jsp/production/Backfat.jsp"/>
+	</folder>
+	
+	<folder moduleName="系统设置" moduleId="30" >
+		<menu parentModuleId="30" levelNum="2" moduleId="301" moduleName="功能菜单管理" moduleUrl="jsp/backend/Module.jsp"/>
+		<menu parentModuleId="30" levelNum="2" moduleId="302" moduleName="系统设置建模" moduleUrl="jsp/backend/CdSetting.jsp"/>
+		<menu parentModuleId="30" levelNum="2" moduleId="303" moduleName="CdCode管理" moduleUrl="jsp/backend/CdCode.jsp"/>
+		<menu parentModuleId="30" levelNum="2" moduleId="304" moduleName="菜单建模" moduleUrl="jsp/backend/Template.jsp"/>
+		<menu parentModuleId="30" levelNum="2" moduleId="305" moduleName="猪舍类型" moduleUrl="jsp/backend/CdPigHouse.jsp"/>
+		<menu parentModuleId="30" levelNum="2" moduleId="306" moduleName="猪只类型" moduleUrl="jsp/backend/CdPigClass.jsp"/>
+		<menu parentModuleId="30" levelNum="2" moduleId="307" moduleName="桌面小部件" moduleUrl="jsp/backend/Parts.jsp"/>
+		<menu parentModuleId="30" levelNum="2" moduleId="308" moduleName="周次查看" moduleUrl="jsp/backend/CdWeek.jsp"/>
+		<menu parentModuleId="30" levelNum="2" moduleId="309" moduleName="设置" moduleUrl="jsp/backen d/SysSetting.jsp"/>		
+		<menu parentModuleId="30" levelNum="2" moduleId="311" moduleName="母猪胎次设置" moduleUrl="jsp/backend/Parity.jsp"/>
+	</folder>
+	
+	<folder moduleName="门户" moduleId="40" >
+		<menu parentModuleId="40" levelNum="2" moduleId="401" moduleName="场长门户" moduleUrl=" jsp/homePage/BusinessAnalysis.jsp"/>
+		<menu parentModuleId="40" levelNum="2" moduleId="402" moduleName="录入门户" moduleUrl=" jsp/homePage/EventInput.jsp"/>
+	</folder>
+	
+	<folder moduleName="报表" moduleId="50" >
+		<menu parentModuleId="50" levelNum="2" moduleId="401" moduleName="综合生产日报" moduleUrl=" http://192.168.1.240:8080/WebReport/ReportServer?reportlet=productionPaper_v.cpt"/>
+	</folder>
+	
+	<folder moduleName="初始化" moduleId="60" >
+		<menu parentModuleId="60" levelNum="2" moduleId="601" moduleName="猪只初始化" moduleUrl=" jsp/initialization/PigInput.jsp"/>
+		<menu parentModuleId="60" levelNum="2" moduleId="602" moduleName="猪舍初始化" moduleUrl=" jsp/initialization/HouseInput.jsp"/>
+		<menu parentModuleId="60" levelNum="2" moduleId="603" moduleName="肉猪初始化" moduleUrl=" jsp/initialization/HouseInput.jsp"/>
+		
+	</folder>
+	
+	<folder moduleName="工具页面" moduleId="90" >
+		<menu parentModuleId="90" levelNum="2" moduleId="901" moduleName="上传" moduleUrl="jsp/Upload.jsp"/>
+	</folder>
+		
+</sidebar>

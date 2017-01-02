@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<excel  excelName="母猪猪只入场">
+    <thead table="pp_input_pig" name="母猪猪只入场">
+    
+        <col index="A" width='12' type="1" key="earBrand" value="耳牌号"></col>
+        <col index="B" width='12' type="1" key="earShort" value="耳缺号"></col>
+        <col index="C" width='12' type="2" key="houseIdName" value="当前猪舍" class="name" son="E"></col>
+        <col index="D" width='12' type="2" key="houseId" value="当前猪舍ID" class="id"></col>
+        <col index="E" width='12' type="2" key="pigpenIdName" value="当前猪栏" class="name" sup="C"></col>
+        <col index="F" width='12' type="2" key="pigpenId" value="当前猪栏ID" class="id"></col>
+        <col index="G" width='12' type="0" key="parity" value="胎次" format="#"></col>
+        <col index="H" width='12' type="2" key="materialName" value="物料主数据" class="name"></col>
+        <col index="I" width='12' type="2" key="materialId" value="主数据ID" class="id"></col>
+        <col index="J" width='12' type="6" key="birthDate" value="出生日期"></col>
+<!--         <col index="K" width='12' type="6" key="productDate" value="转生产日期"></col> -->
+        <col index="K" width='12' type="6" key="breedDate" value="配种日期"></col>
+        <col index="L" width='12' type="2" key="breedBoarName" value="配种公猪" class="name"></col>
+        <col index="M"  width='12' type="2" key="breedBoar" value="配种公猪ID" class="id"></col>
+        <col index="N" width='12' type="6" key="pregnancyDate" value="妊娠日期"></col>        
+        <col index="O" width='12' type="2" key="pregnancyResultName" value="妊娠结果" class="name"></col>        
+        <col index="P" width='12' type="2" key="pregnancyResult" value="妊娠结果Id" class="id"></col>        
+        <col index="O" width='12' type="6" key="changeHouseDate" value="上产房日期" format="#"></col>        
+        <col index="R"  width='12' type="2" key="changeHouseName" value="产房" class="name"></col>        
+        <col index="S"  width='12' type="2" key="changeHouseId" value="产房ID" class="id"></col>        
+        <col index="T" width='12' type="6" key="deliveryDate" value="分娩日期" format="#"></col>        
+        <col index="U"  width='12' type="0" key="aliveLitterWeight" value="活仔窝重" format="#.##"></col>        
+        <col index="V"  width='12' type="0" key="healthyNum" value="健仔数" format="#"></col>        
+        <col index="W"  width='12' type="0" key="weakNum" value="弱仔数" format="#"></col>    
+        <col index="X" width='12' type="0" key="stillbirthNum" value="死胎" format="#"></col>  
+        <col index="Y" width='12' type="0" key="mummyNum" value="木乃伊" format="#"></col>
+        <col index="Z"  width='12' type="0" key="mutantNum" value="畸形" format="#"></col>
+        <col index="AA" width='12' type="6" key="weanDate" value="断奶日期"></col>        
+        <col index="AB" width='12' type="0" key="weanNum" value="断奶数量" format="#"></col>            
+        <col index="AC" width='12' type="0" key="weanWeight" value="断奶窝重" format="#.##"></col>
+        
+        
+        
+       <!--  <col index="H" width='12' type="2" key="pigTypeName" value="猪类别" class="name"></col>
+        <col index="I" width='12' type="2" key="pigType" value="猪类别ID" class="id"></col>
+        <col index="J" width='12' type="2" key="materialName" value="物料主数据" class="name"></col>
+        <col index="K" width='12' type="2" key="materialId" value="主数据ID" class="id"></col>
+        <col index="L" width='12' type="6" key="birthDate" value="出生日期"></col>
+        <col index="M" width='12' type="6" key="productDate" value="转生产日期"></col>
+        <col index="N" width='12' type="6" key="breedDate" value="配种日期"></col>
+        <col index="O" width='12' type="2" key="breedBoarName" value="配种公猪" class="name"></col>
+        <col index="P" width='12' type="2" key="breedBoar" value="配种公猪ID" class="id"></col>
+        <col index="Q" width='12' type="6" key="pregnancyDate" value="妊娠日期"></col>        
+        <col index="R" width='12' type="2" key="pregnancyResultName" value="妊娠结果" class="name"></col>        
+        <col index="S" width='12' type="2" key="pregnancyResult" value="妊娠结果Id" class="id"></col>        
+        <col index="T" width='12' type="6" key="changeHouseDate" value="上产房日期" format="#"></col>        
+        <col index="U" width='12' type="2" key="changeHouseName" value="产房" class="name"></col>        
+        <col index="V" width='12' type="2" key="changeHouseId" value="产房ID" class="id"></col>        
+        <col index="W" width='12' type="6" key="deliveryDate" value="分娩日期" format="#"></col>        
+        <col index="X" width='12' type="0" key="aliveLitterWeight" value="活仔窝重" format="#.##"></col>        
+        <col index="Y" width='12' type="0" key="healthyNum" value="健仔数" format="#"></col>        
+        <col index="Z" width='12' type="0" key="weakNum" value="弱仔数" format="#"></col>        
+        <col index="AA" width='12' type="0" key="stillbirthNum" value="死胎" format="#"></col>        
+        <col index="AB" width='12' type="0" key="mummyNum" value="木乃伊" format="#"></col>
+        <col index="AC" width='12' type="6" key="weanDate" value="断奶日期"></col>        
+        <col index="AD" width='12' type="0" key="weanNum" value="断奶数量" format="#"></col>            
+        <col index="AE" width='12' type="0" key="weanWeight" value="断奶窝重" format="#.##"></col> -->
+    </thead>
+</excel>

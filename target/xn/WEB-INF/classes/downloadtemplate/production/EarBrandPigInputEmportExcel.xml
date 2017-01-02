@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<excel excelName="猪只耳号入场">
+    <thead table="input_pig" name="">
+        <col index="A" width='12' type="1" key="earBrand" value="耳牌号"></col>
+        <col index="B" width='12' type="1" key="earShort" value="耳缺号"></col>
+        <col index="C" width='12' type="2" key="materialIdName" value="物料名称" class="name"></col>
+        <col index="D" width='12' type="2" key="materialId" value="物料ID" class="id"></col>
+        <col index="E" width='12' type="4" key="initCost" value="初始成本" format="#.##"></col>
+        <col index="F" width='12' type="1" key="fatherEarBrand" value="父亲耳号"></col>
+        <col index="G" width='12' type="1" key="motherEarBrand" value="母亲耳号"></col>
+        <col index="H" width='12' type="2" key="houseIdName" value="猪舍名称"  class="name"></col>
+        <col index="I" width='12' type="2" key="houseId" value="猪舍ID" class="id"></col>
+        <col index="J" width='12' type="2" key="pigClassName" value="猪只状态" class="name"></col>        
+        <col index="K" width='12' type="2" key="pigClass" value="猪只状态ID" class="id"></col>        
+        <col index="L" width='12' type="0" key="leftTeatNum" value="左乳头" format="#"></col>        
+        <col index="M" width='12' type="0" key="rightTeatNum" value="右乳头" format="#"></col>        
+        <col index="N" width='12' type="0" key="parity" value="胎次" class="name" format="#"></col>        
+        <col index="O" width='12' type="6" key="birthDate" value="出生日期" format="#"></col>        
+        <col index="P" width='16' type="0" key="birthWeight" value="出生体重(KG)" format="#.##"></col>        
+        <col index="Q" width='16' type="0" key="enterWeight" value="入场体重(KG)" format="#.##"></col>        
+        <col index="R" width='12' type="2" key="supplierIdName" value="供应商" class="name"></col>        
+        <col index="S" width='12' type="2" key="supplierId" value="供应商ID" class="id"></col>        
+        <col index="T" width='12' type="1" key="notes" value="备注"></col>        
+    </thead>
+</excel>

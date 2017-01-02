@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<excel excelName="肉猪初始化">
+    <thead name="肉猪初始化">
+        <col index="A" width='12' type="2" key="materialName" value="物料主数据" class = "name"></col>
+        <col index="B" width='12' type="2" key="materialId" value="主数据ID" class = "id"></col>
+        <col index="C" width='12' type="2" key="houseName" value="猪舍名称" class = "name" son = "E"></col>
+        <col index="D" width='12' type="2" key="houseId" value="猪舍ID" class = "id" ></col>
+        <col index="E" width='12' type="2" key="pigpenName" value="猪栏名称" class ="name" sup = "C"></col>
+        <col index="F" width='12' type="2" key="pigpenId" value="猪栏ID" class = "id"></col>
+        <col index="G" width='12' type="2" key="swineryName" value="批次名称" class = "name"></col>
+        <col index="H" width='12' type="2" key="swineryId" value="批次ID" class = "id"></col>
+        <col index="I" width='12' type="2" key="pigClassName" value="猪只状态" class = "name"></col>
+        <col index="J" width='12' type="2" key="pigClass" value="猪只状态ID" class ="id"></col>
+        <col index="K" width='12' type="6" key="countDate" value="统计日期" ></col>
+        <col index="L" width='12' type="0" key="dayAge" value="日龄" format="#" formatMax="1000000"></col>
+        <col index="M" width='12' type="0" key="totalNum" value="数量" format="#"></col>
+        <col index="N" width='12' type="0" key="avWeight" value="均重" format="#.##"></col>
+        <col index="O" width='12' type="0" key="avPrice" value="均价" format="#.##"></col>
+        <col index="P" width='12' type="2" key="supplier" value="供应商" class = "name"></col>
+        <col index="Q" width='12' type="2" key="supplierId" value="供应商ID" class = "id"></col>
+        
+    </thead>
+</excel>
